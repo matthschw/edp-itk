@@ -1,7 +1,6 @@
 package edlab.eda.edp.itk.nl;
 
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Handle to an instance to be netlisted
