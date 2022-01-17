@@ -8,7 +8,7 @@ public interface Formatter {
   /**
    * Check if a subcircuit with a given name is already added to the netlist
    * 
-   * @param name Name to be checked
+   * @param name name to be checked
    * @return <code>true</code> when is already a subcircuit name,
    *         <code>false</code> otherwise
    */
@@ -18,8 +18,7 @@ public interface Formatter {
    * Append a netlisting statement for a given instance
    * 
    * @param handle    Handle to the instance
-   * @param statement Netlisting statement
-   * @return
+   * @param statement Netlisting statement to be added
    */
   public void append(InstanceHandle handle, String statement);
 }

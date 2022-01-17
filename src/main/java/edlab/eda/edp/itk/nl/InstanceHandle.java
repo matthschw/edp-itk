@@ -16,27 +16,33 @@ public interface InstanceHandle extends NetlistingHandle {
   public String getInstanceName();
 
   /**
-   * @return
+   * Get the connections to the device
+   * 
+   * @return map of connections. The key corresponds to the terminal and the
+   *         value to the attached net/signal.
    */
   public Map<String, String> getConnections();
 
   /**
-   * @return
+   * Get library name
+   * 
+   * @return library name
    */
   public String getLib();
 
   /**
-   * @return
+   * Get cell name
+   * 
+   * @return cell name
    */
   public String getCell();
 
   /**
-   * @return
+   * Get the parameters of the device
+   * 
+   * @return map of parameters. The key corresponds to the parameter name and
+   *         the value to the parameter value. When a parameter is blank (not
+   *         set to specific value), the key is not added to the map.
    */
   public Map<String, String> getParameters();
-
-  /**
-   * @return
-   */
-  public Set<String> getParameterNames();
 }
