@@ -46,9 +46,9 @@ public interface InstanceHandle extends NetlistingHandle {
   public Map<String, String> getParameters();
 
   /**
-   * Get the real name of a parameter
+   * Get all properties of a parameter
    * 
-   * @return real name
+   * @return property
    */
-  public String getParameterProperty(String name);
+  public ParameterProperty getParameterProperty(String name);
 }
