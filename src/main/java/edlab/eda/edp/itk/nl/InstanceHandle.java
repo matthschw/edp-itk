@@ -44,4 +44,11 @@ public interface InstanceHandle extends NetlistingHandle {
    *         set to specific value), the key is not added to the map.
    */
   public Map<String, String> getParameters();
+
+  /**
+   * Get the real name of a parameter
+   * 
+   * @return real name
+   */
+  public String getParameterProperty(String name);
 }
