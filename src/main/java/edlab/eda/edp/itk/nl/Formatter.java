@@ -21,4 +21,11 @@ public interface Formatter {
    * @param statement Netlisting statement to be added
    */
   public void append(InstanceHandle handle, String statement);
+
+  /**
+   * Get the name of the ground net
+   * 
+   * @return name of ground net
+   */
+  public String getGround();
 }
