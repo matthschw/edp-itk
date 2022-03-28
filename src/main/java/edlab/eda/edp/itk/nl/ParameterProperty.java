@@ -13,7 +13,7 @@ public interface ParameterProperty {
   public String getName();
 
   /**
-   * Get the name of the parameter in Virtuoso
+   * Get the name of the parameter in the design environment
    * 
    * @return name
    */

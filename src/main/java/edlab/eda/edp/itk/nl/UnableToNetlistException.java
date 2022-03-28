@@ -6,7 +6,7 @@ package edlab.eda.edp.itk.nl;
 public class UnableToNetlistException extends Exception {
 
   private static final long serialVersionUID = -8221198566503216647L;
-  public final InstanceHandle handle;
+  public final InstanceNetlistingHandle handle;
 
   /**
    * Create a new {@link UnableToNetlistException}
@@ -14,7 +14,7 @@ public class UnableToNetlistException extends Exception {
    * @param handle  Handle to the instance which provoked an netlsiting error
    * @param message Message
    */
-  public UnableToNetlistException(InstanceHandle handle, String message) {
+  public UnableToNetlistException(InstanceNetlistingHandle handle, String message) {
     super(message);
     this.handle = handle;
   }
