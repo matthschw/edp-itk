@@ -2,37 +2,118 @@ package edlab.eda.edp.itk.nl;
 
 import java.util.ArrayList;
 
+/**
+ * Builder for a netlisit statement
+ *
+ */
 public class NetlistStatementBuilder {
+
+  /**
+   * Maximal characters per line (default)
+   */
+  public final int CHARACTERS_PER_LINE = 80;
 
   private final int maxCharacters;
   private final ArrayList<String> values;
   private final String indent;
   private final String lineContinuation;
 
-  public NetlistStatementBuilder(int maxCharacters, String indent) {
-    this.maxCharacters = maxCharacters;
+  /**
+   * Create a new builder
+   */
+  public NetlistStatementBuilder() {
+    this.maxCharacters = CHARACTERS_PER_LINE;
+    this.values = new ArrayList<>();
+    this.indent = "";
+    this.lineContinuation = "";
+  }
+
+  /**
+   * Create a new builder
+   * 
+   * @param indent intendation of new line
+   */
+  public NetlistStatementBuilder(String indent) {
+    this.maxCharacters = CHARACTERS_PER_LINE;
     this.values = new ArrayList<>();
     this.indent = indent;
     this.lineContinuation = "";
   }
 
-  public NetlistStatementBuilder(int maxCharacters, String indent,
-      String lineContinuation) {
-    this.maxCharacters = maxCharacters;
+  /**
+   * Create a new builder
+   * 
+   * @param indent           intendation of new line
+   * @param lineContinuation line continuation character
+   */
+  public NetlistStatementBuilder(String indent, String lineContinuation) {
+    this.maxCharacters = CHARACTERS_PER_LINE;
     this.values = new ArrayList<>();
     this.indent = indent;
     this.lineContinuation = lineContinuation;
   }
 
+  /**
+   * Create a new builder
+   * 
+   * @param maxCharacters max number of characters per line
+   * @param indent        intendation of new line
+   */
+  public NetlistStatementBuilder(int maxCharacters, String indent) {
+
+    if (maxCharacters > 0) {
+      this.maxCharacters = maxCharacters;
+    } else {
+      this.maxCharacters = CHARACTERS_PER_LINE;
+    }
+
+    this.values = new ArrayList<>();
+    this.indent = indent;
+    this.lineContinuation = "";
+  }
+
+  /**
+   * Create a new builder
+   * 
+   * @param maxCharacters    max number of characters per line
+   * @param indent           intendation of new line
+   * @param lineContinuation line continuation character
+   */
+  public NetlistStatementBuilder(int maxCharacters, String indent,
+      String lineContinuation) {
+    
+    if (maxCharacters > 0) {
+      this.maxCharacters = maxCharacters;
+    } else {
+      this.maxCharacters = CHARACTERS_PER_LINE;
+    }
+    
+    this.values = new ArrayList<>();
+    this.indent = indent;
+    this.lineContinuation = lineContinuation;
+  }
+
+  /**
+   * Add a string to the builder
+   * 
+   * @param elem string to be added
+   */
   public void add(String elem) {
     this.values.add(elem);
   }
 
+  /**
+   * Append a string to the builder
+   * 
+   * @param elem string to be added
+   * @return this
+   */
   public NetlistStatementBuilder append(String elem) {
     this.values.add(elem);
     return this;
   }
 
+  @Override
   public String toString() {
 
     StringBuilder builder = new StringBuilder();
@@ -54,6 +135,11 @@ public class NetlistStatementBuilder {
 
   }
 
+  /**
+   * Get the individual lines of the netlist statement as array
+   * 
+   * @return array of lines
+   */
   public String[] getLinesAsArray() {
 
     ArrayList<String> lines = this.getLines();
@@ -66,6 +152,11 @@ public class NetlistStatementBuilder {
     return retval;
   }
 
+  /**
+   * Get a list of the individual lines of the netlist statement
+   * 
+   * @return list
+   */
   public ArrayList<String> getLines() {
 
     final ArrayList<String> lines = new ArrayList<>();
