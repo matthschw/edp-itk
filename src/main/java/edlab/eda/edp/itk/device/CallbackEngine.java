@@ -4,6 +4,6 @@ public interface CallbackEngine {
 
   public boolean canHandleCallback(String parameterName);
 
-  public CallbackEngine handleCallback(String instance, String parameterName);
-
+  public CallbackEngine handleCallback(Device device, String triggeredParameter)
+      throws UnableToTriggerCallbackExeption;
 }

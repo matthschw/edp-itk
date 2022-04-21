@@ -3,9 +3,10 @@ package edlab.eda.edp.itk.nl;
 /**
  * Exception that is thrown when netlisting failed
  */
-public class UnableToNetlistException extends Exception {
+public final class UnableToNetlistException extends Exception {
 
   private static final long serialVersionUID = -8221198566503216647L;
+  
   public final InstanceNetlistingHandle handle;
 
   /**

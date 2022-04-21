@@ -4,9 +4,8 @@ import java.util.ArrayList;
 
 /**
  * Builder for a netlisit statement
- *
  */
-public class NetlistStatementBuilder {
+public final class NetlistStatementBuilder {
 
   /**
    * Maximal characters per line (default)
@@ -132,7 +131,6 @@ public class NetlistStatementBuilder {
     }
 
     return builder.toString();
-
   }
 
   /**

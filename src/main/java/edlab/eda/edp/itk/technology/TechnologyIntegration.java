@@ -41,11 +41,13 @@ public abstract class TechnologyIntegration {
   public abstract boolean hasCallbackEngine(String libName, String cellName);
 
   /**
-   * Get a {@link CallbackEngine} for simulator
+   * Get a {@link CallbackEngine} of a device
    * 
-   * @param simulator name of simulator, e.g. "spectre"
-   * @param formatter Netlisting formatter
-   * @return netlsiting engine
+   * @param libName  Library name
+   * @param cellName Cell name
+   * 
+   * @return callback engine when available, <code>null</code> otherwise
    */
-  public abstract CallbackEngine getCallbackgEngine(String libName, String cellName);
+  public abstract CallbackEngine getCallbackEngine(String libName,
+      String cellName);
 }
