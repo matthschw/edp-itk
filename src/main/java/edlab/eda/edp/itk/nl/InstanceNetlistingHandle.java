@@ -27,6 +27,7 @@ public interface InstanceNetlistingHandle extends NetlistingHandle {
    * 
    * @return library name
    */
+  @Deprecated
   public String getLib();
 
   /**
@@ -34,7 +35,30 @@ public interface InstanceNetlistingHandle extends NetlistingHandle {
    * 
    * @return cell name
    */
+  @Deprecated
   public String getCell();
+
+  /**
+   * Get library name
+   * 
+   * @return library name
+   */
+  public String getLibraryName();
+
+  /**
+   * Get cell name
+   * 
+   * @return cell name
+   */
+  public String getCellName();
+
+  /**
+   * Identify if the instance is defined in subcircuit
+   * 
+   * @return <code>true</code> when the instance is defined in a subcircuit,
+   *         <code>false</code> otherwise
+   */
+  public abstract boolean inSubcircuit();
 
   /**
    * Get the parameters of the device

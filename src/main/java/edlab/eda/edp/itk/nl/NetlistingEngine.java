@@ -7,7 +7,7 @@ public abstract class NetlistingEngine {
 
   protected Formatter formatter;
 
-  public NetlistingEngine(Formatter formatter) {
+  public NetlistingEngine(final Formatter formatter) {
     this.formatter = formatter;
   }
 

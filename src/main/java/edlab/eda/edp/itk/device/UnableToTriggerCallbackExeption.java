@@ -7,8 +7,8 @@ public final class UnableToTriggerCallbackExeption extends Exception {
   public final Device device;
   public final String triggeredParameter;
 
-  public UnableToTriggerCallbackExeption(Device device,
-      String triggeredParameter) {
+  public UnableToTriggerCallbackExeption(final Device device,
+      final String triggeredParameter) {
     this.device = device;
     this.triggeredParameter = triggeredParameter;
   }

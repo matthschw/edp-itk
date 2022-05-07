@@ -1,7 +1,7 @@
 package edlab.eda.edp.itk.nl;
 
 /**
- * Handle to parameter properties
+ * Handle to a parameter property
  */
 public interface ParameterProperty {
 

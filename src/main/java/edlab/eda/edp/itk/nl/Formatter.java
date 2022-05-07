@@ -19,8 +19,10 @@ public interface Formatter {
    * 
    * @param handle    Handle to the instance
    * @param statement Netlisting statement to be added
+   * 
+   * @return this
    */
-  public void append(InstanceNetlistingHandle handle, String statement);
+  public Formatter append(InstanceNetlistingHandle handle, String statement);
 
   /**
    * Get the name of the ground net
