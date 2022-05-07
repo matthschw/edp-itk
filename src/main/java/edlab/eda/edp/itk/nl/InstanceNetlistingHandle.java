@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * Handle to an instance to be netlisted
  */
-public interface InstanceNetlistingHandle extends NetlistingHandle {
+public interface InstanceNetlistingHandle {
 
   /**
    * Get the instance name
