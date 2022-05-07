@@ -5,7 +5,7 @@ package edlab.eda.edp.itk.nl;
  */
 public abstract class NetlistingEngine {
 
-  protected Formatter formatter;
+  protected final Formatter formatter;
 
   public NetlistingEngine(final Formatter formatter) {
     this.formatter = formatter;

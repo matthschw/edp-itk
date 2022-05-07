@@ -27,22 +27,6 @@ public interface InstanceNetlistingHandle extends NetlistingHandle {
    * 
    * @return library name
    */
-  @Deprecated
-  public String getLib();
-
-  /**
-   * Get cell name
-   * 
-   * @return cell name
-   */
-  @Deprecated
-  public String getCell();
-
-  /**
-   * Get library name
-   * 
-   * @return library name
-   */
   public String getLibraryName();
 
   /**
@@ -75,4 +59,11 @@ public interface InstanceNetlistingHandle extends NetlistingHandle {
    * @return property
    */
   public ParameterProperty getParameterProperty(String name);
+
+  /**
+   * Get an empty netlist statement builder for the instance
+   * 
+   * @return builder
+   */
+  public NetlistStatementBuilder getStatementBuilder();
 }
