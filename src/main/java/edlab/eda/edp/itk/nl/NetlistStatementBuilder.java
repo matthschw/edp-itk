@@ -19,4 +19,11 @@ public interface NetlistStatementBuilder {
    * @return string
    */
   public String toString();
+
+  /**
+   * Get all lines of the netlist statement
+   * 
+   * @return lines
+   */
+  public String[] getLines();
 }
