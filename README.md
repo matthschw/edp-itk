@@ -1,10 +1,10 @@
 # edp-itk
 
-Integrators Toolkit for the Expert Design Plan
+Integrators Toolkit for the Expert Design Plan (EDP)
 
 ## License
 
-Copyright (c) 2021 matthschw (https://github.com/matthschw)
+Copyright (C) 2022, [Reutlingen University](https://www.reutlingen-university.de), [Electronics & Drives](https://www.electronics-and-drives.de/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
