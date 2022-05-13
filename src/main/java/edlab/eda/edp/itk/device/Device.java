@@ -23,7 +23,7 @@ public interface Device {
    * Get the cell name of the schematic that contains the device. When the
    * device is instantiated in a netlist, <code>null</code> is returned
    * 
-   * @return cell name
+   * @return library name
    */
   public String getCellName();
 
@@ -36,14 +36,16 @@ public interface Device {
   public String getViewName();
 
   /**
-   * Get the library name of the the
+   * Get the library name of the the instance
    * 
-   * @return
+   * @return library name
    */
   public String getMasterLibraryName();
 
   /**
-   * @return
+   * Get the cell name of the the instance
+   * 
+   * @return cell name
    */
   public String geMastertCellName();
 
