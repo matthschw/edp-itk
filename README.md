@@ -1,6 +1,7 @@
 # edp-itk
 
-Integrators Toolkit for the Expert Design Plan (EDP)
+Integrators Toolkit for the Expert Design Plan (EDP).
+Please investigate the manual (edpitk.pdf) how to integrate your own technology.
 
 ## License
 
