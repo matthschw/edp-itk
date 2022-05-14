@@ -14,13 +14,6 @@ public interface NetlistStatementBuilder {
   public NetlistStatementBuilder append(final String token);
 
   /**
-   * Get a string of the builder
-   * 
-   * @return string
-   */
-  public String toString();
-
-  /**
    * Get all lines of the netlist statement
    * 
    * @return lines

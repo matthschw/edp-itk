@@ -1,7 +1,7 @@
 package edlab.eda.edp.itk.device;
 
 /**
- * Execption that is thrown when triggerung of the callbalck failed
+ * Exception that is thrown when triggering of the callback failed
  */
 public final class UnableToTriggerCallbackExeption extends Exception {
 
@@ -11,7 +11,7 @@ public final class UnableToTriggerCallbackExeption extends Exception {
   public final String triggeredParameter;
 
   /**
-   * Create a excetion
+   * Create a exception
    * 
    * @param device             Device
    * @param triggeredParameter Parameter that is triggered

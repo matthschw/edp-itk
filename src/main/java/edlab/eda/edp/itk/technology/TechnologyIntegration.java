@@ -5,13 +5,14 @@ import edlab.eda.edp.itk.nl.Formatter;
 import edlab.eda.edp.itk.nl.NetlistingEngine;
 
 /**
- * Integrator Tool-Kit for customizing the semiconductor technology
+ * Integrator Tool-Kit for customizing the semiconductor technology. You must
+ * derive this class to create your own technology integration.
  */
 public abstract class TechnologyIntegration {
 
   /**
    * Check if the {@link TechnologyIntegration} can return a
-   * {@link NetlistingEngine} for a simualtor with a given name
+   * {@link NetlistingEngine} for a simulator with a given name
    * 
    * @param simulator name of simulator, e.g. "spectre"
    * @return <code>true</code> when the {@link TechnologyIntegration} can return
@@ -25,7 +26,7 @@ public abstract class TechnologyIntegration {
    * 
    * @param simulator name of simulator, e.g. "spectre"
    * @param formatter Netlisting formatter
-   * @return netlsiting engine
+   * @return netlisting engine
    */
   public abstract NetlistingEngine getNetlistingEngine(String simulator,
       Formatter formatter);

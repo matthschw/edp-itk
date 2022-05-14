@@ -2,6 +2,9 @@ package edlab.eda.edp.itk.device;
 
 import java.util.Map;
 
+/**
+ * Reference to a device where callbacks are executed
+ */
 public interface Device {
 
   /**
@@ -50,7 +53,7 @@ public interface Device {
   public String geMastertCellName();
 
   /**
-   * Get a map of all parameters in the device. The key coreposnds to the name
+   * Get a map of all parameters in the device. The key corresponds to the name
    * of the parameter and the value to the corresponding parameter
    * 
    * @return map of parameters

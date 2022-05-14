@@ -1,5 +1,8 @@
 package edlab.eda.edp.itk.device;
 
+/**
+ * Parameter of a {@link Device} where callbacks are executed
+ */
 public interface DeviceParameter {
 
   /**

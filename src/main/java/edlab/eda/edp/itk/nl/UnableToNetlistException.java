@@ -12,7 +12,7 @@ public final class UnableToNetlistException extends Exception {
   /**
    * Create a new {@link UnableToNetlistException}
    * 
-   * @param handle  Handle to the instance which provoked an netlsiting error
+   * @param handle  Handle to the instance which provoked an netlisting error
    * @param message Message
    */
   public UnableToNetlistException(final InstanceNetlistingHandle handle, final String message) {

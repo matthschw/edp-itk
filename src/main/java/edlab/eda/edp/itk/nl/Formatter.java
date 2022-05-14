@@ -20,7 +20,7 @@ public interface Formatter {
    * @param handle    Handle to the instance
    * @param statement Netlisting statement to be added
    * 
-   * @return <code>this</code> when successfull, <code>null</code> otherwise
+   * @return <code>this</code> when successful, <code>null</code> otherwise
    */
   public Formatter append(InstanceNetlistingHandle handle, String statement);
 
@@ -30,7 +30,7 @@ public interface Formatter {
    * @param handle  Handle to the instance
    * @param builder Builder
    * 
-   * @return <code>this</code> when successfull, <code>null</code> otherwise
+   * @return <code>this</code> when successful, <code>null</code> otherwise
    */
   public Formatter append(InstanceNetlistingHandle handle,
       NetlistStatementBuilder builder);
@@ -41,7 +41,7 @@ public interface Formatter {
    * @param name      Name
    * @param statement Netlisting statement to be added
    * 
-   * @return <code>this</code> when successfull, <code>null</code> otherwise
+   * @return <code>this</code> when successful, <code>null</code> otherwise
    */
   public Formatter append(String name, String statement);
 
@@ -51,7 +51,7 @@ public interface Formatter {
    * @param name    Name
    * @param builder Builder
    * 
-   * @return <code>this</code> when successfull, <code>null</code> otherwise
+   * @return <code>this</code> when successful, <code>null</code> otherwise
    */
   public Formatter append(String name, NetlistStatementBuilder builder);
 
@@ -60,7 +60,7 @@ public interface Formatter {
    * 
    * @param statement Netlisting statement to be added
    * 
-   * @return <code>this</code> when successfull, <code>null</code> otherwise
+   * @return <code>this</code> when successful, <code>null</code> otherwise
    */
   public Formatter append(String statement);
 
@@ -69,7 +69,7 @@ public interface Formatter {
    * 
    * @param builder Builder
    * 
-   * @return <code>this</code> when successfull, <code>null</code> otherwise
+   * @return <code>this</code> when successful, <code>null</code> otherwise
    */
   public Formatter append(NetlistStatementBuilder builder);
 
