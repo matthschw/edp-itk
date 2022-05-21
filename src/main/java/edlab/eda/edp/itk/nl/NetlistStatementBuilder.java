@@ -19,4 +19,8 @@ public interface NetlistStatementBuilder {
    * @return lines
    */
   public String[] getLines();
+  
+  
+  @Override
+  public String toString();
 }
