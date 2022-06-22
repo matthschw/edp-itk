@@ -1,5 +1,6 @@
 package edlab.eda.edp.itk.device;
 
+import java.math.BigDecimal;
 import java.util.Map;
 
 /**
@@ -59,4 +60,37 @@ public interface Device {
    * @return map of parameters
    */
   public Map<String, DeviceParameter> getDeviceParameters();
+
+  /**
+   * Identify if a device has a technology parameter
+   * 
+   * @param name Name of the technology parameter
+   * @return <code>true</code> when available, <code>false</code> otherwise
+   */
+  public boolean hasTechnologyParameter(final String name);
+
+  /**
+   * Get a technology parameter
+   * 
+   * @param name Name of the technology parameter
+   * @return value when available, <code>null</code> otherwise
+   */
+  public BigDecimal getTechnologyParameter(final String name);
+
+  /**
+   * Identify if a device has a technology parameter
+   * 
+   * @param name Name of the technology parameter
+   * @return <code>true</code> when available, <code>false</code> otherwise
+   */
+  public boolean hasTechnologyParameter(final String name, final String key);
+
+  /**
+   * Get a technology paramater
+   * 
+   * @param name Name of the technology parameter
+   * @param key  Key of the technology parameter
+   * @return value when available, <code>null</code> otherwise
+   */
+  public BigDecimal getTechnologyParameter(final String name, final String key);
 }
